@@ -21,7 +21,7 @@ var exec = require('cordova/exec');
 
 var audioinput = {};
 
-var hasTypedArrays = 'Int16Array' in window && 'Float32Array' in window;
+var hasTypedArrays = false;// 'Int16Array' in window && 'Float32Array' in window;
 
 // Audio formats
 audioinput.FORMAT = {
