@@ -110,7 +110,7 @@ public class AudioInputReceiver extends Thread {
 
 			// Forward audio data to Cordova Web app
 			//
-
+			android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
 			int numReadBytes = 0;
 			short audioBuffer[] = new short[readBufferSize];
 			synchronized(this) {
